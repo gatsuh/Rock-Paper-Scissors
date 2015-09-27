@@ -19,6 +19,8 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
         Assert.assertEquals(GameUtils.BEATS,GameUtils.evaluateWinner(player,R.id.btnPaper));
         Assert.assertEquals(GameUtils.TIES,GameUtils.evaluateWinner(player, R.id.btnScissors));
         Assert.assertEquals(GameUtils.LOSES_TO,GameUtils.evaluateWinner(player,R.id.btnRock));
+        Assert.assertEquals(GameUtils.BEATS, GameUtils.evaluateWinner(player,R.id.btnLizard));
+        Assert.assertEquals(GameUtils.LOSES_TO,GameUtils.evaluateWinner(player,R.id.btnSpock));
 
         Assert.assertNotSame(GameUtils.TIES, GameUtils.evaluateWinner(player, R.id.btnPaper));
     }
@@ -30,6 +32,8 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
         Assert.assertEquals(GameUtils.LOSES_TO,GameUtils.evaluateWinner(player,R.id.btnPaper));
         Assert.assertEquals(GameUtils.BEATS,GameUtils.evaluateWinner(player, R.id.btnScissors));
         Assert.assertEquals(GameUtils.TIES,GameUtils.evaluateWinner(player,R.id.btnRock));
+        Assert.assertEquals(GameUtils.BEATS, GameUtils.evaluateWinner(player,R.id.btnLizard));
+        Assert.assertEquals(GameUtils.LOSES_TO,GameUtils.evaluateWinner(player,R.id.btnSpock));
 
         Assert.assertNotSame(GameUtils.TIES,GameUtils.evaluateWinner(player,R.id.btnPaper));
     }
@@ -40,6 +44,8 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
         Assert.assertEquals(GameUtils.TIES,GameUtils.evaluateWinner(player,R.id.btnPaper));
         Assert.assertEquals(GameUtils.LOSES_TO,GameUtils.evaluateWinner(player, R.id.btnScissors));
         Assert.assertEquals(GameUtils.BEATS,GameUtils.evaluateWinner(player,R.id.btnRock));
+        Assert.assertEquals(GameUtils.LOSES_TO, GameUtils.evaluateWinner(player,R.id.btnLizard));
+        Assert.assertEquals(GameUtils.BEATS,GameUtils.evaluateWinner(player,R.id.btnSpock));
 
         Assert.assertNotSame(GameUtils.BEATS,GameUtils.evaluateWinner(player,R.id.btnPaper));
     }
